@@ -15,7 +15,7 @@ import org.apache.log4j.BasicConfigurator;
 public class MessageSender {
      
     //URL of the JMS server. DEFAULT_BROKER_URL will just mean that JMS server is on localhost
-    private static String url = ActiveMQConnection.DEFAULT_BROKER_URL;
+    private static String url = "tcp://ec2-3-134-103-62.us-east-2.compute.amazonaws.com:61616";
      
     // default broker URL is : tcp://localhost:61616"
     private static String subject = "JCG_QUEUE"; // Queue Name.You can create any/many queue names as per your requirement. 
